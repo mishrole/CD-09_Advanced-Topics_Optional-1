@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row f-center">
+            <div id="calculator" class="bg-darkgray p-4">
+                <div id="display" class="text-light text-lg text-right">0</div>
+                <div class="row calc-height f-y-center f-x-around">
+                  <button class="btn btn-round btn-lightgray" onclick="press(7);">7</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(8);">8</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(9);">9</button>
+                  <button class="btn btn-round btn-primary operator" onclick="setOP('/');">÷</button>
+                </div>
+                <div class="row calc-height f-y-center f-x-around">
+                  <button class="btn btn-round btn-lightgray" onclick="press(4);">4</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(5);">5</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(6);">6</button>
+                  <button class="btn btn-round btn-primary operator" onclick="setOP('*');">×</button>
+                </div>
+                <div class="row calc-height f-y-center f-x-around">
+                  <button class="btn btn-round btn-lightgray" onclick="press(1);">1</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(2);">2</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(3);">3</button>
+                  <button class="btn btn-round btn-primary operator" onclick="setOP('-');">−</button>
+                </div>
+                <div class="row calc-height f-y-center f-x-around">
+                  <button class="btn btn-round btn-lightgray" onclick="clr();">C</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press(0);">0</button>
+                  <button class="btn btn-round btn-lightgray" onclick="press('.');">.</button>
+                  <button class="btn btn-round btn-primary operator" onclick="setOP('+');">+</button>
+                </div>
+                <div class="row calc-height f-y-center f-x-around">
+                  <button class="btn btn-full btn-secondary btn-full-round text-dark" id="equals" onclick="calculate()">=</div>
+                </div>
+              <div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
